@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado y la navegación */
+.container-fluid{
+    background-color: rgb(52, 78, 65);
+    color: rgb(218, 215, 205);
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(218, 215, 205);
+    text-decoration: none;
+    padding-left: 20px;
+}
+.navbar-brand:hover {
+    color: rgb(218, 215, 205);
+    text-decoration: none;
+}
+.navbar-toggler {
+    border: none;
+    background: rgb(218, 215, 205);
+    color: rgb(52, 78, 65);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.nav-link {
+    color: rgb(218, 215, 205);
+    text-decoration: none;
+    padding: 8px 12px;
+}
+/* Estilos para el contenido principal */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(218, 215, 205);
+}
+
+/* Estilos para la sección de bienvenida */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+.card-body {
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    color: rgb(52, 78, 65);
+}
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(52, 78, 65);
+}
+.card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+}
+/* Estilos para "proyectos" */
+.titulo_pagina {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(52, 78, 65);
+}
+.bienvenida {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+    padding: 0 20px;
+}
+.col{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-body-proyecto {
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    color: rgb(52, 78, 65);
+}
+.card-title-proyecto {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(52, 78, 65);
+}
+.card-text-proyecto {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+}
+/* Estilos para "Sobre mí" */
+.texto-sobremi {
+    margin-bottom: 5px;
+    text-align: center;
+    color: black;
+    padding: 0 20px;
+}
+/* Contenedor para botones */
+.button-container{
+    text-align: center;
+    margin-top: 20px;
+}
+.ver-mas {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: rgb(52, 78, 65);
+    color: rgb(218, 215, 205);
+    text-decoration: none;
+    border-radius: 4px;
+}
+/* Estilos para "habilidades" */
+.habilidades{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.table {
+    text-align: center;
+    width: 50%;
+    border: 1px solid rgb(52, 78, 65);
+    margin: 0 auto;
+    background-color: rgb(218, 215, 205);
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilos para contacto */
+.card-text-contacto {
+    margin-bottom: 5px;
+    text-align: center;
+    color: black;
+    padding: 0 20px;
+}
+/* Estilo para Redes Sociales */
+.redes {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    padding: 0 20px;    
+}
+.redes-lista {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    color: rgb(218, 215, 205);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.redes-icono {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.redes-lista:hover {
+    background-color: rgb(218, 215, 205);
+    color: rgb(52, 78, 65);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Estilos para los titulos y subtítulos */
+.titulo_pagina {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(52, 78, 65)
+}
+.subtitulo {
+    color: rgb(52, 78, 65);
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgb(52, 78, 65);
+    color: rgb(218, 215, 205);
+    margin-top: 20px;
+}
+.nav-item {
+    margin: 0 10px;
+    color: rgb(218, 215, 205);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Estilos para la sección "Sobre mí" */
+.texto-sobremi {
+    margin-bottom: 5px;
+    text-align: center;
+    color: black;
+    padding: 0 20px;
+}
+
+/* Estilos para la sección de contacto */
+
+
+/* Estilos para el campo de formulario de contacto */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgb(218, 215, 205);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: rgb(52, 78, 65);
+    color: rgb(218, 215, 205);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Estilos para la imagen del banner */
+.banner {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.volver-arriba {
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: rgb(52, 78, 65);
+    color: rgb(218, 215, 205);
+    text-decoration: none;
+    border-radius: 4px;
+}
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgb(52, 78, 65);
+    color: rgb(218, 215, 205);
+    margin-top: 20px;
+}
