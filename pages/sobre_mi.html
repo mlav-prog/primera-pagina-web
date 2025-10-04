@@ -4,52 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mí | M.L.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <h1>Matías Lavoy</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="sobre_mi.html">Sobre Mí</a></li>
-                <li><a href="habilidades.html">Habilidades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Matías Lavoy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        <a class="nav-link" href="./sobre_mi.html">Sobre Mí</a>
+                        <a class="nav-link" href="./habilidades.html">Habilidades</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="main-content">
+    <main>
         <h2 class="titulo_pagina">Sobre Mí</h2>
-        <img src="img2.png" alt="Foto de Matías Lavoy" class="banner">
-        <section>
-            <br>
-            <h3 class="subtitulo">Mi Historia</h3>
-            <p class="texto-sobremi">Hola, soy Matías Lavoy. Soy un desarrollador web con experiencia en HTML, CSS y JavaScript.</p>
-            <p class="texto-sobremi">Me apasiona crear sitios web atractivos y funcionales que brinden una excelente experiencia de usuario.</p>
+        <img src="../img/img2.png" alt="Foto de Matías Lavoy" class="banner">
+        <br>
+        <section class="main-content-sobre-mi">
+            <div class="historia">
+                <div class="card-body-historia">
+                    <h5 class="card-title">Mi Historia</h5>
+                    <p class="card-text">Hola, soy Matías Lavoy. Soy un desarrollador web con experiencia en HTML, CSS y JavaScript.</p>                        
+                    <p class="card-text">Me apasiona crear sitios web atractivos y funcionales que brinden una excelente experiencia de usuario.</p>
+                </div>
+            </div>
+            <div class="objetivo">
+                <div class="card-body-objetivo">
+                    <h5 class="card-title">Mi Objetivo</h5>
+                    <p class="card-text">Mi objetivo es seguir creciendo como desarrollador web y contribuir a proyectos innovadores.</p>
+                    <p class="card-text">Estoy comprometido con la mejora continua y la adquisición de nuevas habilidades para ofrecer soluciones de alta calidad.</p>
+                </div>
+            </div>
+            <div class="experiencia">
+                <div class="card-body-experiencia">
+                    <h5 class="card-title">Experiencia y Formación</h5>
+                    <p class="card-text">Tengo formación en desarrollo web a través de cursos y proyectos personales.</p>
+                    <p class="card-text">He trabajado en varios proyectos que me han permitido mejorar mis habilidades técnicas y creativas.</p>
+                </div>
+            </div>
+            <div class="intereses">
+                <div class="card-body-intereses">
+                    <h5 class="card-title">Intereses</h5>
+                    <p class="card-text">Me apasiona la tecnología y disfruto aprendiendo sobre nuevas tendencias en desarrollo web.</p>
+                    <p class="card-text">También me gusta el diseño gráfico y la fotografía, lo que me permite tener un enfoque más creativo en mis proyectos.</p>
+                </div>
+             </div>
+            <div class="mision-vision">
+                <div class="card-body-mision-vision">
+                    <h5 class="card-title">Misión y Visión</h5>
+                    <p class="card-text">Mi misión es crear soluciones digitales que sean accesibles y útiles para todos.</p>
+                    <p class="card-text">Mi visión es ser un referente en el desarrollo web, contribuyendo a proyectos que marquen la diferencia.</p>
+                </div>
+            </div>
+            <div class="pasatiempos">
+                <div class="card-body-pasatiempos">
+                    <h5 class="card-title">Pasatiempos</h5>
+                    <p class="card-text">Además del desarrollo web, me interesa la tecnología, el diseño gráfico y la fotografía.</p>                            
+                    <p class="card-text">En mi tiempo libre, disfruto explorando nuevas tecnologías y mejorando mis habilidades.</p>
+                </div>
+            </div>
         </section>
-        <section>
-            <br>
-            <h3 class="subtitulo">Experiencia y Formación</h3>
-            <p class="texto-sobremi">Tengo formación en desarrollo web a través de cursos y proyectos personales.</p>
-            <p class="texto-sobremi">He trabajado en varios proyectos que me han permitido mejorar mis habilidades técnicas y creativas.</p>
-        </section>
-        <section>
-            <br>
-            <h3 class="subtitulo">Intereses y Pasatiempos</h3>
-            <p class="texto-sobremi">Además del desarrollo web, me interesa la tecnología, el diseño gráfico y la fotografía.</p>
-            <p class="texto-sobremi">En mi tiempo libre, disfruto explorando nuevas tecnologías y mejorando mis habilidades.</p>
-        </section>
-        <section>
-            <br>
-            <h3 class="subtitulo">Misión y Visión Profesional</h3>
-            <p class="texto-sobremi">Mi misión es crear soluciones digitales innovadoras que ayuden a las personas y empresas a alcanzar sus objetivos.</p>
-            <p class="texto-sobremi">Mi visión es convertirme en un desarrollador web reconocido por mi creatividad, profesionalismo y compromiso con la calidad.</p>
-        </section>
-        <a href="sobre_mi.html" class="ver-mas">Volver arriba</a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </main>
-    <footer>
-        <p>&copy; 2025 Matías Lavoy todos los derechos reservados.</p>
+    <footer class="py-3 my-4">
+        <div class="footer-text">
+            <p>© 2025 Lavoy Matías.</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
