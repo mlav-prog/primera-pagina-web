@@ -1,0 +1,475 @@
+@charset "UTF-8";
+body {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 5px;
+  padding: 0;
+}
+
+/*navbar*/
+.container-fluid {
+  background-color: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container-fluid .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(218, 215, 205);
+  text-decoration: none;
+  padding-left: 20px;
+}
+.container-fluid .navbar-brand:hover {
+  color: rgb(218, 215, 205);
+  text-decoration: none;
+}
+.container-fluid .navbar-brand .navbar-toggler {
+  border: none;
+  background: rgb(218, 215, 205);
+  color: rgb(58, 90, 64);
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-fluid .navbar-brand .navbar-toggler .navbar-toggler-icon {
+  width: 20px;
+  height: 2px;
+  display: block;
+  position: relative;
+}
+.container-fluid .navbar-brand .navbar-toggler .navbar-toggler-icon .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.container-fluid .navbar-brand .navbar-toggler .navbar-toggler-icon .navbar-nav .nav-link {
+  color: rgb(218, 215, 205);
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+/* Sección bienvenida */
+.main-content .card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 15px;
+}
+.main-content .card-body {
+  padding: 15px;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  color: rgb(58, 90, 64);
+}
+.main-content .card-body .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(58, 90, 64);
+}
+.main-content .card-body .card-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+/* Sección proyectos */
+.proyectos-index .titulo_pagina {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(58, 90, 64);
+}
+.proyectos-index .bienvenida {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+  padding: 0 20px;
+}
+.proyectos-index .col {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.proyectos-index .card-body-proyecto {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(58, 90, 64);
+}
+.proyectos-index .card-body-proyecto .card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(218, 215, 205);
+}
+.proyectos-index .card-body-proyecto .card-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Sección sobre mí */
+.sobre-mi-index .texto-sobre-mi {
+  margin-bottom: 5px;
+  text-align: center;
+  color: black;
+  padding: 0 20px;
+}
+
+/* Sección habilidades */
+.habilidades-index .habilidades {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.habilidades-index .habilidades .table {
+  text-align: center;
+  width: 50%;
+  border: 1px solid rgb(58, 90, 64);
+  margin: 0 auto;
+  background-color: rgb(218, 215, 205);
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Sección contacto */
+.contactos-index .card-text-contacto {
+  text-align: center;
+  margin-bottom: 5px;
+  color: black;
+  padding: 0 20px;
+}
+.contactos-index .redes {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  padding: 0 20px;
+}
+.contactos-index .redes .redes-lista {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 15px;
+  color: rgb(218, 215, 205);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, 0 2px 4px rgba(0, 0, 0, 0.1) 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contactos-index .redes .redes-lista .redes-icono {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.contactos-index .redes .redes-lista .redes-icono:hover {
+  background-color: rgb(218, 215, 205);
+  color: rgb(58, 90, 64);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contactos-index .redes .iconos {
+  font-size: 24px;
+  margin: 0 10px;
+  color: rgb(58, 90, 64);
+  text-decoration: none;
+}
+.contactos-index .redes .iconos:hover {
+  color: black;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  margin-top: 20px;
+}
+footer .footer-text {
+  margin: 0;
+  color: rgb(218, 215, 205);
+}
+
+/*contenedor de botones*/
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.button-container .btn {
+  background-color: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-container .btn:hover {
+  background-color: rgb(218, 215, 205);
+  color: rgb(58, 90, 64);
+}
+
+.ver-mas {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.ver-mas:hover {
+  background-color: rgb(218, 215, 205);
+  color: rgb(58, 90, 64);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ver-mas-proyecto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1px;
+  padding: 8px 12px;
+  background-color: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.volver-arriba {
+  position: fixed;
+  display: inline-block;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background-color: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.volver-arriba:hover {
+  background-color: rgb(218, 215, 205);
+  color: rgb(58, 90, 64);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-enviar {
+  background-color: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.button-enviar:hover {
+  background-color: rgb(218, 215, 205);
+  color: rgb(58, 90, 64);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilo para titulos y subtitulos*/
+.titulo_pagina {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(58, 90, 64);
+  margin-top: 20px;
+}
+
+.subtitulo {
+  color: rgb(58, 90, 64);
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Pagina de proyectos */
+.card-body-proyectos {
+  padding: 15px;
+  border-radius: 8px 8px 8px 8px;
+  text-align: center;
+  align-items: center;
+  color: rgb 163, 173, 138;
+  background-color: rgb(58, 90, 64);
+}
+.card-body-proyectos .card-title-proyecto {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  color: rgb(218, 215, 205);
+}
+.card-body-proyectos .card-text-proyecto {
+  font-size: 14px;
+  margin: 10px 5px 10px 5px;
+  color: rgb(218, 215, 205);
+  text-align: justify;
+}
+
+/* Pagina sobre mi */
+.main-content-sobre-mi {
+  margin: 0 auto;
+  background: rgb(218, 215, 205);
+  padding: 20px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  grid-template-areas: "historia objetivos" "experiencia mision-vision" "intereses pasatiempos";
+}
+.main-content-sobre-mi .historia {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: historia;
+  align-items: center;
+  text-align: center;
+}
+.main-content-sobre-mi .objetivo {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: objetivos;
+  align-items: center;
+  text-align: center;
+}
+.main-content-sobre-mi .experiencia {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: experiencia;
+  align-items: center;
+  text-align: center;
+}
+.main-content-sobre-mi .intereses {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: intereses;
+  align-items: center;
+  text-align: center;
+}
+.main-content-sobre-mi .pasatiempos {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: pasatiempos;
+  align-items: center;
+  text-align: center;
+}
+.main-content-sobre-mi .mision-vision {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: mision-vision;
+  align-items: center;
+  text-align: center;
+}
+
+/* Pagina de Habilidades */
+.habilidades-tecnicas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.habilidades-tecnicas .fw-bold {
+  background-color: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.habilidades-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.habilidades-list .list-group-item {
+  background-color: rgb(58, 90, 64);
+  color: rgb(218, 215, 205);
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.table {
+  text-align: center;
+  width: 50%;
+  border: 1px solid rgb(58, 90, 64);
+  margin: 0 auto;
+  background-color: rgb(218, 215, 205);
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Pagina de contacto */
+.redes {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  padding: 0 20px;
+}
+.redes .redes-lista {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 15px;
+  color: rgb(218, 215, 205);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, 0 2px 4px rgba(0, 0, 0, 0.1) 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.redes .redes-lista .redes-icono {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.redes .redes-lista .redes-icono:hover {
+  background-color: rgb(218, 215, 205);
+  color: rgb(58, 90, 64);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto {
+  text-align: center;
+  margin: 50px;
+  color: rgb(58, 90, 64);
+}
+.formulario-contacto .row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.formulario-contacto .mb-3 {
+  margin-bottom: 15px;
+}
+
+/* Estilos para banner */
+.banner {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=style.css.map */
