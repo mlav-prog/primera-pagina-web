@@ -111,9 +111,9 @@ body {
   padding: 15px;
   border-radius: 5px;
   text-align: center;
-  color: rgb(58, 90, 64);
+  background-color: rgb(58, 90, 64);
 }
-.proyectos-index .card-body-proyecto .card-title {
+.proyectos-index .card-body-proyecto h3 {
   font-size: 20px;
   margin-bottom: 10px;
   color: rgb(218, 215, 205);
