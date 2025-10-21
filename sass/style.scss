@@ -47,19 +47,28 @@ body {
                 height: 2px;
                 display: block;
                 position: relative;
-                .navbar-nav {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    list-style: none;
-                    padding-left: 0;
-                    margin: 0;
-                    .nav-link {
-                        color: $primary-color;
-                        text-decoration: none;
-                        padding: 8px 12px;
-                    }
-                }
+            }
+        }
+    }        
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding-left: 0;
+        margin: 5px;
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            &:hover {
+                border-radius: 10px;
+                background-color: $primary-color;
+                text-decoration: none;
+                color: $secondary-color;
+                box-shadow: $box-shadow;
+                transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
             }
         }
     }

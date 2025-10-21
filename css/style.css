@@ -41,18 +41,27 @@ body {
   display: block;
   position: relative;
 }
-.container-fluid .navbar-brand .navbar-toggler .navbar-toggler-icon .navbar-nav {
+.container-fluid .navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   padding-left: 0;
-  margin: 0;
+  margin: 5px;
 }
-.container-fluid .navbar-brand .navbar-toggler .navbar-toggler-icon .navbar-nav .nav-link {
+.container-fluid .navbar-nav a {
   color: rgb(218, 215, 205);
   text-decoration: none;
   padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.container-fluid .navbar-nav a:hover {
+  border-radius: 10px;
+  background-color: rgb(218, 215, 205);
+  text-decoration: none;
+  color: rgb(58, 90, 64);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Sección bienvenida */
