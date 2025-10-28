@@ -9,6 +9,17 @@ $margin: 20px;
 $border-radius: 5px;
 $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin shadow {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .20);
+}
+
+
 body {
     font-family: $font-family;
     font-size: $font-size;
@@ -24,7 +35,7 @@ body {
     padding: $padding;
     text-align: center;
     margin-bottom: 20px;
-    box-shadow: $box-shadow;
+    @include shadow;
     .navbar-brand {
         font-size: 24px;
         font-weight: bold;
@@ -51,9 +62,7 @@ body {
         }
     }        
     .navbar-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         list-style: none;
         padding-left: 0;
         margin: 5px;
@@ -67,7 +76,7 @@ body {
                 background-color: $primary-color;
                 text-decoration: none;
                 color: $secondary-color;
-                box-shadow: $box-shadow;
+                @include shadow;
                 transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
             }
         }
@@ -113,9 +122,7 @@ body {
             }
             .col{
                 margin-bottom: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-center;
                 flex-direction: column;
             }
             .card-body-proyecto {
@@ -158,7 +165,7 @@ body {
                     color: $tertiary-color;
                     border-radius: $border-radius;
                     padding: 10px;
-                    box-shadow: $box-shadow;
+                    @include shadow;
                     margin-bottom: 20px;
                 }
             }
@@ -211,15 +218,42 @@ body {
         }
         /* Footer */
         footer {
-            text-align: center;
-            padding: 10px 0;
             background: $secondary-color;
             color: $primary-color;
-            margin-top: 20px;
-            .footer-text {
-                margin: 0;
-                color: $primary-color;
-            }
+            text-align: center;
+            padding-top: 18px;
+            padding-bottom: 16px;
+            margin-top: 28px;
+            margin-bottom: 0;
+            font-size: 14px;
+            box-shadow: $box-shadow;
+            .container-text-center{
+                text-align: center;
+                ul {
+                    border-bottom: 1px solid rgba($primary-color, 0.22);
+                    padding-bottom: 8px;
+                    margin-bottom: 10px;
+                    gap: 14px;
+                    flex-wrap: wrap;
+                    .nav-item {
+                        color: rgba ($primary-color, 0.92);
+                        text-decoration: none;
+                        font-weight: 500;
+                        letter-spacing: .2px;
+                        padding: 4px 6px;
+                        transition: color 0.3s ease, transform 0.3s ease;
+                        &:hover {
+                            color: lighten($primary-color, 10%);
+                            text-decoration: underline;
+                            transform: translateY(-2px);
+                        }
+                    }
+                }
+                .footer-text {
+                    font-size: 14px;
+                    color: rgba($primary-color, 0.85);
+                }
+            }    
         }
         /*contenedor de botones*/
         .button-container {
@@ -249,7 +283,7 @@ body {
             border-radius: $border-radius;
             text-decoration: none;
             transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: $box-shadow;
+            @include shadow;
             &:hover {
                 background-color: $primary-color;
                 color: $secondary-color;
@@ -268,7 +302,7 @@ body {
             text-decoration: none;
             border-radius: $border-radius;
             transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: $box-shadow;
+            @include shadow;
         }
         .volver-arriba {
             position: fixed;
@@ -281,11 +315,11 @@ body {
             text-decoration: none;
             border-radius: $border-radius;
             transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: $box-shadow;
+            @include shadow;
             &:hover {
                 background-color: $primary-color;
                 color: $secondary-color;
-                box-shadow: $box-shadow;
+                @include shadow;
             }
         }
         .button-enviar {
@@ -295,7 +329,7 @@ body {
         padding: 10px 15px;
         border-radius: $border-radius;
         transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: $box-shadow;
+        @include shadow;
         cursor: pointer;
         &:hover {
             background-color: $primary-color;
@@ -394,9 +428,7 @@ body {
 }
 /* Pagina de Habilidades */
 .habilidades-tecnicas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: 20px;
 
     margin-top: 20px;
@@ -409,9 +441,7 @@ body {
     }
 }
 .habilidades-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
