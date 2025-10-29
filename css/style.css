@@ -230,7 +230,6 @@ footer .container-text-center ul .nav-item:hover {
   transform: translateY(-2px);
 }
 footer .container-text-center .footer-text {
-  margin: 4px 0;
   font-size: 14px;
   color: rgba(218, 215, 205, 0.85);
 }
@@ -363,7 +362,6 @@ footer .container-text-center .footer-text {
 /* Pagina sobre mi */
 .main-content-sobre-mi {
   margin: 0 auto;
-  background: rgb(218, 215, 205);
   padding: 20px;
   border-radius: 5px;
   align-items: center;
@@ -375,39 +373,81 @@ footer .container-text-center .footer-text {
   grid-template-areas: "historia objetivos" "experiencia mision-vision" "intereses pasatiempos";
 }
 .main-content-sobre-mi .historia {
+  background-color: rgba(218, 215, 205, 0.85);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   grid-area: historia;
   align-items: center;
   text-align: center;
 }
+.main-content-sobre-mi .historia .card-body-historia {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
 .main-content-sobre-mi .objetivo {
+  background-color: rgba(218, 215, 205, 0.85);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   grid-area: objetivos;
   align-items: center;
   text-align: center;
 }
+.main-content-sobre-mi .objetivo .card-body-objetivo {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
 .main-content-sobre-mi .experiencia {
+  background-color: rgba(218, 215, 205, 0.85);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   grid-area: experiencia;
   align-items: center;
   text-align: center;
 }
+.main-content-sobre-mi .experiencia .card-body-experiencia {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
 .main-content-sobre-mi .intereses {
+  background-color: rgba(218, 215, 205, 0.85);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   grid-area: intereses;
   align-items: center;
   text-align: center;
 }
+.main-content-sobre-mi .intereses .card-body-intereses {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
 .main-content-sobre-mi .pasatiempos {
+  background-color: rgba(218, 215, 205, 0.85);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   grid-area: pasatiempos;
   align-items: center;
   text-align: center;
 }
+.main-content-sobre-mi .pasatiempos .card-body-pasatiempos {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
 .main-content-sobre-mi .mision-vision {
+  background-color: rgba(218, 215, 205, 0.85);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   grid-area: mision-vision;
   align-items: center;
+  text-align: center;
+}
+.main-content-sobre-mi .mision-vision .card-body-mision-vision {
+  padding: 15px;
+  border-radius: 5px;
   text-align: center;
 }
 

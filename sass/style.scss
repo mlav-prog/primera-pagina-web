@@ -376,7 +376,6 @@ body {
 /* Pagina sobre mi */
 .main-content-sobre-mi {
     margin: 0 auto;
-    background: $primary-color;
     padding: 20px;
     border-radius: $border-radius;
     align-items: center;
@@ -390,40 +389,82 @@ body {
         "experiencia mision-vision"
         "intereses pasatiempos";
     .historia {
+        background-color: rgba($primary-color, 0.85);
         box-shadow: $box-shadow;
+        border-radius: 15px;
         grid-area: historia;
         align-items: center;
         text-align: center;
+        .card-body-historia {
+            padding: 15px;
+            border-radius: $border-radius;
+            text-align: center;
+        }
     }
     .objetivo {
+        background-color: rgba($primary-color, 0.85);
         box-shadow: $box-shadow;
+        border-radius: 15px;
         grid-area: objetivos;
         align-items: center;
         text-align: center;
+        .card-body-objetivo {
+            padding: 15px;
+            border-radius: $border-radius;
+            text-align: center;
+        }
     }
     .experiencia {
+        background-color: rgba($primary-color, 0.85);
         box-shadow: $box-shadow;
+        border-radius: 15px;
         grid-area: experiencia;
         align-items: center;
         text-align: center;
+        .card-body-experiencia {
+            padding: 15px;
+            border-radius: $border-radius;
+            text-align: center;
+        }
     }
     .intereses {
+        background-color: rgba($primary-color, 0.85);
         box-shadow: $box-shadow;
+        border-radius: 15px;
         grid-area: intereses;
         align-items: center;
         text-align: center;
+        .card-body-intereses {
+            padding: 15px;
+            border-radius: $border-radius;
+            text-align: center;
+        }
     }
     .pasatiempos {
+        background-color: rgba($primary-color, 0.85);
         box-shadow: $box-shadow;
+        border-radius: 15px;
         grid-area: pasatiempos;
         align-items: center;
         text-align: center;
+        .card-body-pasatiempos {
+            padding: 15px;
+            border-radius: $border-radius;
+            text-align: center;
+        }
     }
     .mision-vision {
+        background-color: rgba($primary-color, 0.85);
         box-shadow: $box-shadow;
+        border-radius: 15px;
         grid-area: mision-vision;
         align-items: center;
         text-align: center;
+        .card-body-mision-vision {
+            padding: 15px;
+            border-radius: $border-radius;
+            text-align: center;
+        }
     }
 }
 /* Pagina de Habilidades */
